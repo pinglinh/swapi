@@ -2,13 +2,13 @@ import React from "react";
 import { shallow } from "enzyme";
 import { configure } from "enzyme";
 import Adapter from "enzyme-adapter-react-16";
-import App from "./App";
+import SearchContainer from "./SearchContainer";
 
 configure({ adapter: new Adapter() });
 
-describe("App component", () => {
+describe("SearchContainer component", () => {
   test("renders", () => {
-    const wrapper = shallow(<App />);
+    const wrapper = shallow(<SearchContainer />);
 
     expect(wrapper.exists()).toBe(true);
   });
